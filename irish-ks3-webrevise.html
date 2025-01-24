@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KS3 Irish</title>
+<meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="wr.png">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+
+/* Style the header */
+header {
+  background-color: #f0ffff;
+  height:170px;
+  padding: 5px;
+  font-size: 27px;
+  color: black;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  background-color:#ffffff;
+  width:100%;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #f0ffff; 
+  text-align: right;
+  align-items: right;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  padding: 14px 16px;
+  background-color:#ffffff;
+  text-decoration: none;
+}
+
+.subnav {
+  float: right;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: right;
+  text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  article {
+    width: 100%;
+    height: 500%;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: 50%;
+  }
+}
+.about {
+padding:20px;
+display: block;
+font-size: 18px;
+ text-align: center;
+ width: 100%;
+}
+.a {
+padding:20px;
+display: block;
+ text-align: center;
+ background-color:#E5F3FD;
+ width: 100%;
+}  
+
+.ks2 {
+padding:50px;
+display: block;  
+background-image: url('KS2.jpg');
+font-color: black;
+ text-align: center;
+}
+.ks3 {
+padding:50px;
+display: block;  
+background-image: url('KS3.jpg');
+font-color: black;
+ text-align: center;
+}
+.gcse {
+padding:50px;
+display: block;  
+background-image: url('gcse.jpg');
+font-color: black;
+ text-align: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  height: 80px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: tabler;
+  clear: both;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.column1 {
+  float: left;
+  text-align: center;
+  width: 25%;
+  padding: 10px;
+  height: 160px; /* Should be removed. Only for demonstration */
+}
+
+
+.column {
+  float: left;
+  text-align: center;
+  width: 45%;
+  padding: 10px;
+  height: 120px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+<header>
+  <a href="webrevise.html"><img src="wr.png" style = "float:left;width:150px;height:140px"></a>
+<div class="navbar">
+   <div class="subnav">
+    <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="about-webrevise.html">ABOUT</a> <i class="fa fa-caret-down"></i></button>
+  </div> 
+   <div class="subnav">
+    <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="gcse-webrevise.html">GCSE</a> <i class="fa fa-caret-down"></i></button>
+  </div> 
+   <div class="subnav">
+    <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="ks3-webrevise.html">KS3</a> <i class="fa fa-caret-down"></i></button>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="ks2-webrevise.html">KS2</a> <i class="fa fa-caret-down"></i></button> </div> 
+   <div class="subnav">
+    <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="webrevise.html">HOME</a> <i class="fa fa-caret-down"></i></button>
+  </div> 
+  <h1 style="text-align:left;">&nbsp KS3 IRISH </h1>
+  
+ </div>
+</header> 
+<section>
+  <article>
+  
+<div class="about">
+<h3>CLICK ON YOUR CHOSEN REVISION WEBSITE.</h3> 
+</div>
+<div class="a">
+<h2> GOOD LUCK!!! </h2> 
+</div> 
+<br><br>
+<div class="row">
+<div class="column" style="float:left">
+<h3><a href="https://www.bbc.co.uk/bitesize/subjects/zks78hv"> BBC BITESIZE </a></h3>
+  </div>
+ 
+ <div class="column" style="float:right">
+<h3><a href="https://wordwall.net/en-gb/community/ks3/irish-language"> WORDWALL </a></h3>
+  </div>
+ 
+<div class="column" style="float:left">
+<h3><a href="https://quizlet.com/gb/477088631/irish-ks3-flash-cards/"> QUIZLET </a></h3>
+  </div>
+ 
+ <div class="column" style="float:right">
+<h3><a href="https://www.twinkl.co.uk/resources/roi-resources"> TWINKL </a></h3>
+  </div>
+
+ <div class="column1" style="float:left">
+    <h5></h5>
+  </div>
+  
+  <div class="column" style="float:center-right">
+<h3><a href="https://www.tes.com/teaching-resource/migration-sow-ks3-lesson-9-irish-12910724"> TES </a></h3>
+  </div>
+ 
+    
+ </div>
+
+</article>
+</body>
+</html> 

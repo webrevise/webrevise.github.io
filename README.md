@@ -15,7 +15,7 @@ English Language
 English Literature 
 Maths 
 Science 
-Chemistry  
+Chemistry 
 Physics 
 Biology 
 Geography 
@@ -33,10 +33,10 @@ Business
 Music 
 Drama 
 Art 
-Citizenship   
+Citizenship 
 Sociology 
 French 
 Spanish 
-German   
+German 
 Irish 
 Mandarin 

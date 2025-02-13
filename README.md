@@ -7,7 +7,9 @@ Variety of Websites
 KS2 
 KS3 
 GCSE 
-Exam 
+Study 
+Notes 
+Exams 
 Revision Resources 
 Subjects 
 English 

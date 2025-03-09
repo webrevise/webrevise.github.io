@@ -194,11 +194,24 @@ section::after {
     border: 1px solid #ccc;  
   }
 }
+    /* Desktop */
+    #logo {
+      width: 250px;
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      #logo {
+        width: 150px; /* Smaller logo on mobile */
+        height: auto;
+      }
+    }
 </style>
 </head>
 <body>
 <header>
-  <a href="webrevise.html"><img src="wr.png" style = "float:left;width:170px;height:160px"></a>
+  <a href="webrevise.html"><img id="logo" src="wr.png"></a>
 <div class="navbar">
    <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="about-webrevise.html">ABOUT</a> <i class="fa fa-caret-down"></i></button>

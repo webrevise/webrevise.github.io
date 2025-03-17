@@ -267,7 +267,9 @@ section::after {
 
 /* Show dropdown menu on hover */
 .subnav:hover .subnav-content {
-  display: grid; /* Ensures it remains in two-column layout */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px;
 }
 
 </style>

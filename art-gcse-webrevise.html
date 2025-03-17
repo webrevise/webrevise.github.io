@@ -40,47 +40,44 @@ article {
   gap: 10px; /* Adds spacing between links */
 }
 
+/* Style navbar links */
 .navbar a, .subnav .subnavbtn {
   font-size: 16px;
   padding: 14px 16px;
   background-color: #ffffff;
   text-decoration: none;
+  display: block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
+/* SUBNAV: Container for dropdown */
 .subnav {
   position: relative;
   display: inline-block;
 }
 
-.subnav .subnavbtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  padding: 1rem;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
+/* DROPDOWN: Initially hidden */
 .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 320px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 5px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+  grid-template-columns: 1fr;
   gap: 2px;
+  right: 0; /* Aligns dropdown to the right */
 }
 
+/* SHOW DROPDOWN ON HOVER */
 .subnav:hover .subnav-content {
   display: grid;
-  opacity: 1;
-  visibility: visible;
 }
-
+	
 /* Clear floats after the columns */
 section::after {
   content: "";

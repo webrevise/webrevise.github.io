@@ -48,6 +48,31 @@ article {
   text-decoration: none;
 }
 
+
+.subnav-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+
+.subnav-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}    }
+
 .subnav {
   float: right;
 	cursor: hover;
@@ -65,23 +90,12 @@ padding: 1rem;
   margin: 0;
  cursor: hover;
 }
-
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
-
+	
 .subnav-content a {
   float: right;
   text-decoration: none;
 }
 
-.subnav:hover .subnav-content {
-  display: block;
-}
 
 
 /* Clear floats after the columns */
@@ -239,33 +253,7 @@ section::after {
       height: 150px; /* Maintain aspect ratio */
     }
 
- .subnav-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.subnav-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.subnav-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show dropdown menu on hover */
-.subnav:hover .subnav-content {
-  display: block;
-}
-
-.dropdown-content a:hover {background-color: #ddd;}    }
-
+	}
 </style>
 </head>
 <body>

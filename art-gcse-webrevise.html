@@ -53,7 +53,6 @@ article {
 .subnav {
   position: relative;
   display: inline-block;
-  float:right;
 }
 
 /* Style the button inside the submenu */
@@ -64,9 +63,11 @@ article {
   outline: none;
   font-family: inherit;
   margin: 0;
-  cursor: hover
+  cursor: pointer;
   background-color: #ffffff;
   text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 /* Style the dropdown container */
@@ -77,11 +78,11 @@ article {
   min-width: 320px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 5px;  
+  padding: 10px;
   right: 0; /* Aligns dropdowns properly */
   left: auto; /* Prevents left alignment */
   top: 100%; /* Ensures it appears below the button */
-  
+
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two-column layout */
   gap: 10px;
@@ -94,6 +95,7 @@ article {
   text-decoration: none;
   display: block;
   white-space: nowrap;
+  transition: background-color 0.3s ease;
 }
 
 /* Hover effect for dropdown links */
@@ -104,6 +106,18 @@ article {
 /* Show dropdown when hovering over subnav */
 .subnav:hover .subnav-content {
   display: grid;
+}
+
+/* Optional: Add smooth transition */
+.subnav-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.subnav:hover .subnav-content {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Clear floats after the columns */

@@ -31,12 +31,14 @@ article {
   padding: 20px;
   width:100%;
 }
+	
 .navbar {
-  float: right;
-display: flex;
-  justify-content: flex-end; 	
+  display: flex;
+  justify-content: flex-end; /* Aligns navbar to the right */
+  align-items: center;
   background-color: #fdf2e9;
   padding: 10px;
+  gap: 10px; /* Adds spacing between links */
 }
 
 .navbar a {
@@ -75,8 +77,9 @@ display: flex;
   min-width: 320px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 5px;
-  left: 0;
+  padding: 5px;  
+  right: 0; /* Aligns dropdowns properly */
+  left: auto; /* Prevents left alignment */
   top: 100%; /* Ensures it appears below the button */
   
   display: grid;

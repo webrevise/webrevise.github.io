@@ -32,12 +32,12 @@ article {
   width:100%;
 }
 .navbar {
-
-  background-color: #fdf2e9 ; 
-  text-align: right;
-  align-items: right;
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end; /* Moves items to the right */
+	float: right;
+  align-items: center;
+  background-color: #fdf2e9;
+  padding: 10px;
 }
 
 .navbar a {
@@ -76,7 +76,7 @@ article {
   min-width: 320px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 10px;
+  padding: 5px;
   left: 0;
   top: 100%; /* Ensures it appears below the button */
   

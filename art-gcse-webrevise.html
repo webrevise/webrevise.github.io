@@ -239,20 +239,26 @@ section::after {
       height: 150px; /* Maintain aspect ratio */
     }
 
- .subnav-content {
+.subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 320px; /* Adjust width for two columns */
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
+  padding: 10px;
+  
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+  gap: 10px; /* Adds space between columns */
 }
 
 .subnav-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 8px 12px;
   text-decoration: none;
   display: block;
+  white-space: nowrap; /* Prevents text from wrapping */
 }
 
 .subnav-content a:hover {
@@ -261,10 +267,8 @@ section::after {
 
 /* Show dropdown menu on hover */
 .subnav:hover .subnav-content {
-  display: block;
+  display: grid; /* Ensures it remains in two-column layout */
 }
-
-.dropdown-content a:hover {background-color: #ddd;}    }
 
 </style>
 </head>
@@ -277,34 +281,34 @@ section::after {
   </div> 
    <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="gcse-webrevise.html">GCSE</a> <i class="fa fa-caret-down"></i></button>
-<div class="subnav-content">
-      <a href="maths-gcse-webrevise.html">Maths</a>
-      <a href="englang-gcse-webrevise.html">English Language</a>
-	<a href="englit-gcse-webrevise.html">English Literature</a>
-      <a href="science-gcse-webrevise.html">Science</a>
-	<a href="chemistry-gcse-webrevise.html">Chemistry</a>
-	<a href="biology-gcse-webrevise.html">Biology</a>
-	<a href="physics-gcse-webrevise.html">Physics</a>
-      <a href="history-gcse-webrevise.html">History</a>
-      <a href="geography-gcse-webrevise.html">Geography</a>
-      <a href="rs-gcse-webrevise.html">Religious Studies</a>
-      <a href="computing-gcse-webrevise.html">Computing</a>
-	<a href="media-gcse-webrevise.html">Media</a>
-      <a href="music-gcse-webrevise.html">Music</a>
-	<a href="drama-gcse-webrevise.html">Drama</a>
-	<a href="citizenship-gcse-webrevise.html">Citizenship</a>
-	<a href="art-gcse-webrevise.html">Art</a>
-      <a href="journalism-gcse-webrevise.html">Journalism</a>
-      <a href="sociology-gcse-webrevise.html">Sociology</a>
-      <a href="foodtech-gcse-webrevise.html">Food Technology</a>
-	<a href="french-gcse-webrevise.html">French</a>
-	<a href="spanish-gcse-webrevise.html">Spanish</a>
-	<a href="german-gcse-webrevise.html">German</a>
-      <a href="irish-gcse-webrevise.html">Irish</a>
-      <a href="mandarin-gcse-webrevise.html">Mandarin</a>
-    </div>
-   </div> 
-  
+
+  <div class="subnav-content">
+    <a href="maths-gcse-webrevise.html">Maths</a>
+    <a href="englang-gcse-webrevise.html">English Language</a>
+    <a href="englit-gcse-webrevise.html">English Literature</a>
+    <a href="science-gcse-webrevise.html">Science</a>
+    <a href="chemistry-gcse-webrevise.html">Chemistry</a>
+    <a href="biology-gcse-webrevise.html">Biology</a>
+    <a href="physics-gcse-webrevise.html">Physics</a>
+    <a href="history-gcse-webrevise.html">History</a>
+    <a href="geography-gcse-webrevise.html">Geography</a>
+    <a href="rs-gcse-webrevise.html">Religious Studies</a>
+    <a href="computing-gcse-webrevise.html">Computing</a>
+    <a href="media-gcse-webrevise.html">Media</a>
+    <a href="music-gcse-webrevise.html">Music</a>
+    <a href="drama-gcse-webrevise.html">Drama</a>
+    <a href="citizenship-gcse-webrevise.html">Citizenship</a>
+    <a href="art-gcse-webrevise.html">Art</a>
+    <a href="journalism-gcse-webrevise.html">Journalism</a>
+    <a href="sociology-gcse-webrevise.html">Sociology</a>
+    <a href="foodtech-gcse-webrevise.html">Food Technology</a>
+    <a href="french-gcse-webrevise.html">French</a>
+    <a href="spanish-gcse-webrevise.html">Spanish</a>
+    <a href="german-gcse-webrevise.html">German</a>
+    <a href="irish-gcse-webrevise.html">Irish</a>
+    <a href="mandarin-gcse-webrevise.html">Mandarin</a>
+  </div>
+</div>
 <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="ks3-webrevise.html">KS3</a> <i class="fa fa-caret-down"></i></button>
   </div>

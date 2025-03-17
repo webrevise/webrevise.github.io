@@ -48,7 +48,40 @@ article {
   text-decoration: none;
 }
 
+.subnav {
+  float: right;
+	cursor: hover;
+	position:relative;
+}
 
+.subnav .subnavbtn {
+  font-size: 16px;  
+  display: flex;
+  justify-content: space-between; 
+  border: none;
+padding: 1rem;
+  outline: none;
+  font-family: inherit;
+  margin: 0;
+ cursor: hover;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: right;
+  text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
 
 
 /* Clear floats after the columns */
@@ -205,68 +238,33 @@ section::after {
       width: 150px;
       height: 150px; /* Maintain aspect ratio */
     }
-    /* Mobile */
-    @media (max-width: 768px) {
-      #logo {
-        width: 75px; /* Smaller logo on mobile */
-        height:75px;
-      }
-    }
 
-/* Style the submenu */
-.subnav {
-  position: relative;
-  display: inline-block;
-}
-	
-.subnav .subnavbtn {
-  font-size: 16px;
-  border: none;
-  padding: 1rem;
-  outline: none;
-  font-family: inherit;
-  margin: 0;
-  cursor: pointer; /* Fix the cursor */
-  background-color: #ffffff;
-  text-decoration: none;
-}
-
-/* Style the dropdown container */
-.subnav-content {
+ .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 320px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 10px;
-  left: 0;
-  top: 100%; /* Ensures it appears below the button */
-  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two-column layout */
-  gap: 10px;
 }
 
-/* Style the links inside dropdown */
 .subnav-content a {
   color: black;
-  padding: 8px 12px;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
-  white-space: nowrap;
 }
 
-/* Hover effect for dropdown links */
 .subnav-content a:hover {
   background-color: #ddd;
 }
 
-/* Show dropdown when hovering over subnav */
+/* Show dropdown menu on hover */
 .subnav:hover .subnav-content {
-  display: grid;
+  display: block;
 }
 
+.dropdown-content a:hover {background-color: #ddd;}    }
 
 </style>
 </head>
@@ -279,34 +277,34 @@ section::after {
   </div> 
    <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="gcse-webrevise.html">GCSE</a> <i class="fa fa-caret-down"></i></button>
-
-  <div class="subnav-content">
-    <a href="maths-gcse-webrevise.html">Maths</a>
-    <a href="englang-gcse-webrevise.html">English Language</a>
-    <a href="englit-gcse-webrevise.html">English Literature</a>
-    <a href="science-gcse-webrevise.html">Science</a>
-    <a href="chemistry-gcse-webrevise.html">Chemistry</a>
-    <a href="biology-gcse-webrevise.html">Biology</a>
-    <a href="physics-gcse-webrevise.html">Physics</a>
-    <a href="history-gcse-webrevise.html">History</a>
-    <a href="geography-gcse-webrevise.html">Geography</a>
-    <a href="rs-gcse-webrevise.html">Religious Studies</a>
-    <a href="computing-gcse-webrevise.html">Computing</a>
-    <a href="media-gcse-webrevise.html">Media</a>
-    <a href="music-gcse-webrevise.html">Music</a>
-    <a href="drama-gcse-webrevise.html">Drama</a>
-    <a href="citizenship-gcse-webrevise.html">Citizenship</a>
-    <a href="art-gcse-webrevise.html">Art</a>
-    <a href="journalism-gcse-webrevise.html">Journalism</a>
-    <a href="sociology-gcse-webrevise.html">Sociology</a>
-    <a href="foodtech-gcse-webrevise.html">Food Technology</a>
-    <a href="french-gcse-webrevise.html">French</a>
-    <a href="spanish-gcse-webrevise.html">Spanish</a>
-    <a href="german-gcse-webrevise.html">German</a>
-    <a href="irish-gcse-webrevise.html">Irish</a>
-    <a href="mandarin-gcse-webrevise.html">Mandarin</a>
-  </div>
-</div>
+<div class="subnav-content">
+      <a href="maths-gcse-webrevise.html">Maths</a>
+      <a href="englang-gcse-webrevise.html">English Language</a>
+	<a href="englit-gcse-webrevise.html">English Literature</a>
+      <a href="science-gcse-webrevise.html">Science</a>
+	<a href="chemistry-gcse-webrevise.html">Chemistry</a>
+	<a href="biology-gcse-webrevise.html">Biology</a>
+	<a href="physics-gcse-webrevise.html">Physics</a>
+      <a href="history-gcse-webrevise.html">History</a>
+      <a href="geography-gcse-webrevise.html">Geography</a>
+      <a href="rs-gcse-webrevise.html">Religious Studies</a>
+      <a href="computing-gcse-webrevise.html">Computing</a>
+	<a href="media-gcse-webrevise.html">Media</a>
+      <a href="music-gcse-webrevise.html">Music</a>
+	<a href="drama-gcse-webrevise.html">Drama</a>
+	<a href="citizenship-gcse-webrevise.html">Citizenship</a>
+	<a href="art-gcse-webrevise.html">Art</a>
+      <a href="journalism-gcse-webrevise.html">Journalism</a>
+      <a href="sociology-gcse-webrevise.html">Sociology</a>
+      <a href="foodtech-gcse-webrevise.html">Food Technology</a>
+	<a href="french-gcse-webrevise.html">French</a>
+	<a href="spanish-gcse-webrevise.html">Spanish</a>
+	<a href="german-gcse-webrevise.html">German</a>
+      <a href="irish-gcse-webrevise.html">Irish</a>
+      <a href="mandarin-gcse-webrevise.html">Mandarin</a>
+    </div>
+   </div> 
+  
 <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="ks3-webrevise.html">KS3</a> <i class="fa fa-caret-down"></i></button>
   </div>
@@ -385,4 +383,4 @@ section::after {
 
 </article>
 </body>
-</html> 
+</html>

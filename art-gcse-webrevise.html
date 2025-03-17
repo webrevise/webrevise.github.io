@@ -31,66 +31,78 @@ article {
   padding: 20px;
   width:100%;
 }
-/* Navbar container: Aligns navbar to the right */
+
+
+/* Navbar container */
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Aligns navbar content to the right */
+  justify-content: flex-end; /* Align navbar content to the right */
   align-items: center; /* Centers items vertically */
   background-color: #fdf2e9;
   padding: 10px;
   gap: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 100%;
 }
 
-/* Remove unnecessary float and apply flexbox */
+/* Style for subnav (dropdown menu container) */
 .subnav {
+  position: relative;
   display: inline-block;
 }
 
-/* Align the text and background of subnav buttons */
+/* Style for the buttons inside the navbar */
 .subnavbtn {
   font-size: 16px;
   background: none;
   border: none;
   cursor: pointer;
   padding: 14px 16px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  color: black;
 }
 
+/* Remove default link style */
 .subnavbtn a {
   text-decoration: none;
-  text-align: right;
-  background-color: #ffffff;
+  color: black;
   padding: 0;
+  display: inline-block;
 }
 
-/* Dropdown container */
+/* Dropdown content hidden by default */
 .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 300px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 10px;
   right: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  gap: 5px;
   font-size: 16px;
   text-align: left; /* Align dropdown text properly */
+  grid-template-columns: repeat(2, 1fr); /* Optional: 2 columns layout */
+  gap: 5px;
 }
 
+/* Show dropdown content on hover */
 .subnav:hover .subnav-content {
-  display: grid;
+  display: block;
 }
 
-/* Ensure the header text is left-aligned and stands out */
-header h1 {
-  text-align: left;
-  font-size: 30px;
-  margin-left: 20px;
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack the navbar items vertically */
+  }
+
+  .subnav-content {
+    min-width: 100%; /* Make dropdown full-width on small screens */
+  }
 }
 	
 /* Clear floats after the columns */

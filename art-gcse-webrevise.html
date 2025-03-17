@@ -59,26 +59,25 @@ article {
   display: inline-block;
 }
 
-/* Dropdown menu */
 .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 200px;
+  min-width: 300px; /* Adjust width to fit two columns */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2px;
+  padding: 10px;
   right: 0; /* Aligns dropdown to the right */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+  gap: 5px;
 }
 
 /* Show dropdown on hover */
 .subnav:hover .subnav-content {
   display: grid;
 }
-
+	
 /* Fix dropdown button styles */
 .subnavbtn {
   font-size: 16px;

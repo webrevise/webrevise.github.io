@@ -239,26 +239,28 @@ section::after {
       height: 150px; /* Maintain aspect ratio */
     }
 
-    /* Mobile */
-    @media (max-width: 768px) {
-      #logo {
-        width: 15px; /* Smaller logo on mobile */
-        height:15px;
-      }
-	    
-.dropdown-content {
+ .subnav-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
+.subnav-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
+  display: block;
+}
+
+.subnav-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.subnav:hover .subnav-content {
   display: block;
 }
 
@@ -275,14 +277,13 @@ section::after {
   </div> 
    <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="gcse-webrevise.html">GCSE</a> <i class="fa fa-caret-down"></i></button>
-  <ul class="dropdown-content">
-	  <li><a href="maths-gcse-webrevise.html">Maths</a></li>
-	  <li><a href="englang-gcse-webrevise.html">English Language</a></li>
-	  <li><a href="englit-gcse-webrevise.html">English Literature</a></li>
-	  <li><a href="science-gcse-webrevise.html">Science</a></li>
-	  <li><a href="chemistry-gcse-webrevise.html">Chemistry</a></li>
-	  <li><a href="biology-gcse-webrevise.html">Biology</a></li>
-	  <li><a href="physics-gcse-webrevise.html">Physics</a></li>
+<div class="subnav-content">
+      <a href="maths-gcse-webrevise.html">Maths</a>
+      <a href="englang-gcse-webrevise.html">English Language</a>
+      <a href="science-gcse-webrevise.html">Science</a>
+      <a href="history-gcse-webrevise.html">History</a>
+      <a href="geography-gcse-webrevise.html">Geography</a>
+    </div>
 	  <li>History</li>
 	  <li>Geography</li>
 	  <li>Religious Studies</li>

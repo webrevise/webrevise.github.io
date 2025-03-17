@@ -33,44 +33,51 @@ article {
 }
 .navbar {
   display: flex;
-  justify-content: flex-end; /* Moves navbar to the right */
+  justify-content: flex-end; /* Align navbar to the right */
   align-items: center;
   background-color: #fdf2e9;
   padding: 10px;
-  gap: 10px; /* Adds spacing between links */
-  text-align: right;
+  gap: 10px;
 }
 
-/* Ensures links in the navbar align to the right */
-.navbar a, .subnav .subnavbtn {
-  text-align: right;
+/* Dropdown button */
+.subnavbtn {
   font-size: 16px;
-  padding: 14px 16px;
-  background-color: #ffffff;
-  text-decoration: none;
-  display: block;
+  background: none;
   border: none;
   cursor: pointer;
-  font-family: inherit;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
 }
+
+/* Remove background color from links inside buttons */
+.subnavbtn a {
+  text-decoration: none;
+  padding: 0;
+  display: inline-block;
+}
+
 /* Dropdown container */
 .subnav {
   position: relative;
   display: inline-block;
 }
 
+/* Dropdown content */
 .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 300px; /* Adjust width to fit two columns */
+  min-width: 300px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 10px;
-  right: 0; /* Aligns dropdown to the right */
+  right: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal-width columns */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 5px;
+  text-align: left; /* Align dropdown text properly */
 }
 
 /* Show dropdown on hover */
@@ -78,23 +85,6 @@ article {
   display: grid;
 }
 	
-/* Fix dropdown button styles */
-.subnavbtn {
-  font-size: 16px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  text-align: right;
-}
-
-/* Remove button styles interfering with dropdown */
-.subnavbtn a {
-  text-decoration: none;
-  background-color: transparent;
-  padding: 0;
-}
-
 /* Clear floats after the columns */
 section::after {
   content: "";

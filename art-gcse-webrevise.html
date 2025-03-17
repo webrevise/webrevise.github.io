@@ -32,10 +32,12 @@ article {
   width:100%;
 }
 .navbar {
-  overflow: hidden;
+
   background-color: #fdf2e9 ; 
   text-align: right;
   align-items: right;
+  position: relative;
+  display: inline-block;
 }
 
 .navbar a {
@@ -243,25 +245,11 @@ section::after {
         width: 15px; /* Smaller logo on mobile */
         height:15px;
       }
-    }
-	.dropbtn {
-  background-color: white;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
+	    
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -274,31 +262,8 @@ section::after {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #ddd;}    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.subnav .submenu {
-	opacity: 0;
-	pointer-events: none;
-	position: absolute;
-	left:0%; 
-	border-radius:1rem;
-	padding: 1rem;
-}
-
-.subnav .submenu li{
-	font-size: 12px;
-	padding: 1rem;
-	border-radius: .5rem;
-	cursor:pointer; 
-}
 </style>
 </head>
 <body>
@@ -310,7 +275,7 @@ section::after {
   </div> 
    <div class="subnav">
     <button class="subnavbtn"><a style="text-decoration:none; text-align: right; background-color:#ffffff;" href="gcse-webrevise.html">GCSE</a> <i class="fa fa-caret-down"></i></button>
-  <ul class="submenu">
+  <ul class="dropdown-content">
 	  <li><a href="maths-gcse-webrevise.html">Maths</a></li>
 	  <li><a href="englang-gcse-webrevise.html">English Language</a></li>
 	  <li><a href="englit-gcse-webrevise.html">English Literature</a></li>

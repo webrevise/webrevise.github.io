@@ -238,7 +238,14 @@ section::after {
       width: 150px;
       height: 150px; /* Maintain aspect ratio */
     }
-
+    /* Mobile */
+    @media (max-width: 768px) {
+      #logo {
+        width: 75px; /* Smaller logo on mobile */
+        height:75px;
+      }
+    }
+	
 .subnav-content {
   display: none;
   position: absolute;

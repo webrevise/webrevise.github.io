@@ -31,52 +31,43 @@ article {
   padding: 20px;
   width:100%;
 }
-	.navbar {
-  overflow: hidden;
-  background-color: #fdf2e9 ; 
-  text-align: right;
-  align-items: right;
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* Aligns navbar to the right */
+  align-items: center;
+  background-color: #fdf2e9;
+  padding: 10px;
+  gap: 10px; /* Adds spacing between links */
 }
 
-.navbar a {
-  float: right;
+.navbar a, .subnav .subnavbtn {
   font-size: 16px;
   padding: 14px 16px;
-  background-color:#ffffff;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
 .subnav {
-  float: right;
-  overflow: hidden;
   position: relative;
   display: inline-block;
 }
 
-/* Style the button inside the submenu */
 .subnav .subnavbtn {
-  font-size: 16p;
   display: flex;
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: center;
   border: none;
-padding: 1rem;
-  outline: none;
-  font-family: inherit;
-  margin: 0;
-  cursor: pointer;
+  padding: 1rem;
   background-color: #ffffff;
-  text-decoration: none;
-  display: block;
-  width: 100%;
+  cursor: pointer;
 }
 
-/* Style the dropdown container */
 .subnav-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 320px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
   padding: 5px;
   display: grid;
@@ -84,34 +75,8 @@ padding: 1rem;
   gap: 2px;
 }
 
-/* Style the links inside dropdown */
-.subnav-content a {
-  color: black;
-  padding: 8px 12px;
-  text-decoration: none;
-  display: block;
-  white-space: nowrap;
-  transition: background-color 0.3s ease;
-}
-
-/* Hover effect for dropdown links */
-.subnav-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show dropdown when hovering over subnav */
 .subnav:hover .subnav-content {
   display: grid;
-}
-
-/* Optional: Add smooth transition */
-.subnav-content {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.subnav:hover .subnav-content {
   opacity: 1;
   visibility: visible;
 }

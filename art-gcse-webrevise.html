@@ -1,154 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>GCSE Art</title>
-<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>GCSE Art</title>
   <link rel="icon" type="image/x-icon" href="wr.png">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Helvetica;
+      margin: 0;
+    }
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Helvetica;
-}
-
-
-/* Style the header */
-header {
+    header {
       background-color: #fdf2e9;
-      padding: 10px;
+      padding: 170px 20px 20px 20px;
       font-size: 27px;
       color: black;
       position: relative;
     }
-
-article {
-  float: left;
-  padding: 20px;
-  width:100%;
-}
-
-
-
-
-
-/* Responsive layout for small screens */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column; /* Stack the navbar items vertically */
-  }
-
-  .subnav-content {
-    min-width: 100%; /* Make dropdown full-width on small screens */
-  }
-}
-	
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  article {
-    width: 100%;
-    height: 500%;
-  }
-}
-@media (max-width: 600px) {
-  nav {
-    width: 100%;
-    height: 50%;
-  }
-}
-.about {
-padding:20px;
-display: block;
-font-size: 18px;
- text-align: center;
- width: 100%;
-}
-.a {
-padding:20px;
-display: block;
- text-align: center;
- background-color:#fcf3cf;
- width: 100%;
-}  
-
-.ks2 {
-padding:50px;
-display: block;  
-background-image: url('KS2.jpg');
-font-color: black;
- text-align: center;
-}
-.ks3 {
-padding:50px;
-display: block;  
-background-image: url('KS3.jpg');
-font-color: black;
- text-align: center;
-}
-.gcse {
-padding:50px;
-display: block;  
-background-image: url('gcse.jpg');
-font-color: black;
- text-align: center;
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.column {
-  float: left;
-  text-align: center;
-  width: 50%;
-  padding: 10px;
-  height: 80px; 
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: tabler;
-  clear: both;
-}
-
-
-.column1 {
-  float: left;
-  text-align: center;
-  width: 25%;
-  padding: 10px;
-  height: 160px; /* Should be removed. Only for demonstration */
-}
-
-
-.column {
-  float: left;
-  text-align: center;
-  width: 45%;
-  padding: 10px;
-  height: 120px; /* Should be removed. Only for demonstration */
-}
-
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
     header img {
       float: left;
@@ -166,7 +38,7 @@ section::after {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap;
-      background-color: #fdf2e9 ;
+      background-color: #fdf2e9;
       padding-right: 20px;
     }
 
@@ -194,24 +66,24 @@ section::after {
     }
 
     .dropdown-content {
-  display: none;
-  position: absolute;
-  right: 0;
-  background-color: #f9f9f9;
-  min-width: 320px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  column-count: 2;
-  column-gap: 0;
-}
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 320px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      column-count: 2;
+      column-gap: 0;
+    }
 
-.dropdown-content a {
-  display: block;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-  font-size: 12px;
-}
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      color: black;
+      text-decoration: none;
+      font-size: 12px;
+    }
 
     .dropdown-content a:hover {
       background-color: #ddd;
@@ -221,7 +93,6 @@ section::after {
       display: block;
     }
 
-    /* Hamburger for mobile */
     .hamburger {
       display: none;
       font-size: 30px;
@@ -232,23 +103,11 @@ section::after {
       right: 20px;
     }
 
-.fa:hover {
-    opacity: 0.7;
-}
-    /* Desktop */
-    #logo {
-      width: 150px;
-      height: 150px; /* Maintain aspect ratio */
-    }
-
-	}
-	    /* Active page indicator */
     .active {
       font-weight: bold;
       border-bottom: 2px solid red;
     }
 
-    /* Responsive layout */
     @media (max-width: 768px) {
       .navbar {
         display: none;
@@ -280,131 +139,127 @@ section::after {
       }
     }
 
-</style>
+    .about, .a {
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .a {
+      background-color: #fcf3cf;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 1 1 40%;
+      max-width: 45%;
+      text-align: center;
+    }
+
+    a {
+      color: black;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  </style>
 </head>
 <body>
+
 <header>
   <a href="webrevise.html"><img src="wr.png" alt="WebRevise Logo"></a>
   <span class="hamburger" onclick="toggleMenu()">☰</span>
 
   <div class="navbar" id="navMenu">
-  
-  <div class="dropdown">
+    <div class="dropdown">
       <button class="dropbtn" onclick="location.href='webrevise.html'">HOME</button>
-      </div>
-	  
+    </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='ks2-webrevise.html'">KS2</button>
-      
     </div>
-
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='ks3-webrevise.html'">KS3</button>
-      </div>
-
+    </div>
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='gcse-webrevise.html'">GCSE</button>
       <div class="dropdown-content">
-	  <a href="maths-gcse-webrevise.html">Maths</a>
-      <a href="englang-gcse-webrevise.html">English Language</a>
-	<a href="englit-gcse-webrevise.html">English Literature</a>
-      <a href="science-gcse-webrevise.html">Science</a>
-	<a href="chemistry-gcse-webrevise.html">Chemistry</a>
-	<a href="biology-gcse-webrevise.html">Biology</a>
-	<a href="physics-gcse-webrevise.html">Physics</a>
-      <a href="history-gcse-webrevise.html">History</a>
-      <a href="geography-gcse-webrevise.html">Geography</a>
-      <a href="rs-gcse-webrevise.html">Religious Studies</a>
-      <a href="computing-gcse-webrevise.html">Computing</a>
-	<a href="media-gcse-webrevise.html">Media</a>
-      <a href="music-gcse-webrevise.html">Music</a>
-	<a href="drama-gcse-webrevise.html">Drama</a>
-	<a href="citizenship-gcse-webrevise.html">Citizenship</a>
-	<a href="art-gcse-webrevise.html">Art</a>
-      <a href="journalism-gcse-webrevise.html">Journalism</a>
-      <a href="sociology-gcse-webrevise.html">Sociology</a>
-      <a href="foodtech-gcse-webrevise.html">Food Technology</a>
-	<a href="french-gcse-webrevise.html">French</a>
-	<a href="spanish-gcse-webrevise.html">Spanish</a>
-	<a href="german-gcse-webrevise.html">German</a>
-      <a href="irish-gcse-webrevise.html">Irish</a>
-      <a href="mandarin-gcse-webrevise.html">Mandarin</a>
+        <!-- GCSE subject links (unchanged) -->
+        <a href="maths-gcse-webrevise.html">Maths</a>
+        <a href="englang-gcse-webrevise.html">English Language</a>
+        <a href="englit-gcse-webrevise.html">English Literature</a>
+        <a href="science-gcse-webrevise.html">Science</a>
+        <a href="chemistry-gcse-webrevise.html">Chemistry</a>
+        <a href="biology-gcse-webrevise.html">Biology</a>
+        <a href="physics-gcse-webrevise.html">Physics</a>
+        <a href="history-gcse-webrevise.html">History</a>
+        <a href="geography-gcse-webrevise.html">Geography</a>
+        <a href="rs-gcse-webrevise.html">Religious Studies</a>
+        <a href="computing-gcse-webrevise.html">Computing</a>
+        <a href="media-gcse-webrevise.html">Media</a>
+        <a href="music-gcse-webrevise.html">Music</a>
+        <a href="drama-gcse-webrevise.html">Drama</a>
+        <a href="citizenship-gcse-webrevise.html">Citizenship</a>
+        <a href="art-gcse-webrevise.html">Art</a>
+        <a href="journalism-gcse-webrevise.html">Journalism</a>
+        <a href="sociology-gcse-webrevise.html">Sociology</a>
+        <a href="foodtech-gcse-webrevise.html">Food Technology</a>
+        <a href="french-gcse-webrevise.html">French</a>
+        <a href="spanish-gcse-webrevise.html">Spanish</a>
+        <a href="german-gcse-webrevise.html">German</a>
+        <a href="irish-gcse-webrevise.html">Irish</a>
+        <a href="mandarin-gcse-webrevise.html">Mandarin</a>
       </div>
     </div>
-
     <div class="dropdown">
       <button class="dropbtn" onclick="location.href='about-webrevise.html'">ABOUT</button>
-      </div>
-
+    </div>
   </div>
 
-  <h1></h1> GCSE ART </h1>
-  
- </div>
-</header> 
+  <h1>GCSE ART</h1>
+</header>
+
 <section>
   <article>
-  
-<div class="about">
-<h3>CLICK ON YOUR CHOSEN REVISION WEBSITE.</h3> 
-</div>
-<div class="a">
-<h2> GOOD LUCK!!! </h2> 
-</div> 
-<br><br>
-<div class="row">
-<div class="column" style="float:left">
-<h3><a href="https://www.bbc.co.uk/bitesize/subjects/z6hs34j"> BBC BITESIZE </a></h3>
-  </div>
- 
- <div class="column" style="float:right">
-<h3><a href="https://www.gov.uk/government/publications/gcse-art-and-design"> GOV.UK </a></h3>
-  </div><br><br>
-  
-<div class="column" style="float:left">
-<h3><a href="https://getrevising.co.uk/resources/level/gcse/subjects/art_and_design"> GET REVISING </a></h3>
-  </div>
- 
- <div class="column" style="float:right">
-<h3><a href="https://www.tes.com/teaching-resource/gcse-revision-art-gcse-art-exam-2020-12046497"> TES </a></h3>
-  </div><br><br>
-  
-<div class="column" style="float:left">
-<h3><a href="https://tmagcse.co.uk/art/"> TMA GCSE </a></h3>
-  </div>
-   
-  <div class="column" style="float:right">
-<h3><a href="https://www.eduqas.co.uk/qualifications/art-and-design-gcse/"> EDUQAS </a></h3>
-  </div><br><br>
+    <div class="about">
+      <h3>CLICK ON YOUR CHOSEN REVISION WEBSITE.</h3>
+    </div>
+    <div class="a">
+      <h2>GOOD LUCK!!!</h2>
+    </div>
 
- <div class="column" style="float:left">
-<h3><a href="https://www.studentartguide.com/"> STUDENT ART GUIDE </a></h3>
-  </div>
-  
- <div class="column" style="float:right">
-<h3><a href="https://www.oxnotes.com/gcse-art.html"> OX NOTES </a></h3>
-  </div><br><br>
-  
-<div class="column" style="float:left">
-<h3><a href="https://www.wjec.co.uk/qualifications/art-and-design-gcse/"> WJEC </a></h3>
-  </div>
+    <div class="row">
+      <div class="column"><h3><a href="https://www.bbc.co.uk/bitesize/subjects/z6hs34j">BBC BITESIZE</a></h3></div>
+      <div class="column"><h3><a href="https://www.gov.uk/government/publications/gcse-art-and-design">GOV.UK</a></h3></div>
+      <div class="column"><h3><a href="https://getrevising.co.uk/resources/level/gcse/subjects/art_and_design">GET REVISING</a></h3></div>
+      <div class="column"><h3><a href="https://www.tes.com/teaching-resource/gcse-revision-art-gcse-art-exam-2020-12046497">TES</a></h3></div>
+      <div class="column"><h3><a href="https://tmagcse.co.uk/art/">TMA GCSE</a></h3></div>
+      <div class="column"><h3><a href="https://www.eduqas.co.uk/qualifications/art-and-design-gcse/">EDUQAS</a></h3></div>
+      <div class="column"><h3><a href="https://www.studentartguide.com/">STUDENT ART GUIDE</a></h3></div>
+      <div class="column"><h3><a href="https://www.oxnotes.com/gcse-art.html">OX NOTES</a></h3></div>
+      <div class="column"><h3><a href="https://www.wjec.co.uk/qualifications/art-and-design-gcse/">WJEC</a></h3></div>
+      <div class="column"><h3><a href="https://www.aqa.org.uk/subjects/art-and-design/gcse/art-and-design-8201-8206/assessment-resources">AQA</a></h3></div>
+      <div class="column"><h3><a href="https://www.ocr.org.uk/qualifications/gcse/art-and-design-j170-j176-from-2016/">OCR</a></h3></div>
+      <div class="column"><h3><a href="https://qualifications.pearson.com/en/qualifications/edexcel-gcses/art-and-design-2016.html">PEARSON</a></h3></div>
+    </div>
+  </article>
+</section>
 
- <div class="column" style="float:right">
-<h3><a href="https://www.aqa.org.uk/subjects/art-and-design/gcse/art-and-design-8201-8206/assessment-resources"> AQA </a></h3>
-  </div><br><br>
-  
-<div class="column" style="float:left">
-<h3><a href="https://www.ocr.org.uk/qualifications/gcse/art-and-design-j170-j176-from-2016/"> OCR </a></h3>
-  </div>
+<script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+  }
+</script>
 
-    
-	<div class="column" style="float:right">
-<h3><a href="https://qualifications.pearson.com/en/qualifications/edexcel-gcses/art-and-design-2016.html"> PEARSON </a></h3>
-  </div><br><br><br><br>
-    
-  
- </div>
-
-</article>
 </body>
 </html>

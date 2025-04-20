@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>GCSE Biology</title>
   <link rel="icon" type="image/x-icon" href="wr.png">
+ 
   <style>
     * {
       box-sizing: border-box;
@@ -82,7 +83,7 @@
       padding: 10px;
       color: black;
       text-decoration: none;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .dropdown-content a:hover {
@@ -156,26 +157,14 @@
       gap: 20px;
       padding: 20px;
     }
-
-    .column {
-  float: left;
-  text-align: center;
-  width: 50%;
-  padding: 10px;
-  height: 80px; 
-}
     
-    .column1 {
-  float: left;
-  text-align: center;
-  width: 25%;
-  padding: 10px;
-  height: 160px; /* Should be removed. Only for demonstration */
-}
-
-    a {
-      color: black;
+    .column {
+      flex: 1 1 40%;
+      max-width: 45%;
+      text-align: center;
     }
+
+
 
     section::after {
       content: "";
@@ -235,6 +224,7 @@
       <button class="dropbtn" onclick="location.href='about-webrevise.html'">ABOUT</button>
     </div>
   </div>
+
   <h1>GCSE BIOLOGY </h1>
   
  </div>

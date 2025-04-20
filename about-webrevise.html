@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About</title>
+  <title>About</title>
   <link rel="icon" type="image/x-icon" href="wr.png">
-<meta charset="utf-8">
+  <meta charset="utf-8">
 
-<style>
+  <style>
     * {
       box-sizing: border-box;
     }
@@ -17,7 +17,7 @@
 
     header {
       background-color: #fffefa;
-      padding: 20px 20px 20px 20px;
+      padding: 20px;
       font-size: 27px;
       color: black;
       position: relative;
@@ -140,14 +140,11 @@
       }
     }
 
-    .about, .a {
+    .a {
       padding: 20px;
       text-align: center;
-      width: 100%;
-    }
-
-    .a {
       background-color: #fcf3cf;
+      width: 100%;
     }
 
     .row {
@@ -157,20 +154,19 @@
       gap: 20px;
       padding: 20px;
     }
-    
+
     .column {
       flex: 1 1 40%;
       max-width: 45%;
       text-align: center;
     }
 
-article {
-  float: left;
-  padding: 20px;
-  background-color: #fffaf1;
-  width:100%;
-}
-
+    article {
+      float: left;
+      padding: 20px;
+      background-color: #fffaf1;
+      width: 100%;
+    }
 
     section::after {
       content: "";
@@ -178,6 +174,17 @@ article {
       clear: both;
     }
 
+    .author-info {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .author-info a {
+      display: block;
+      margin: 10px 0;
+      color: #0000ee;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
@@ -204,37 +211,33 @@ article {
     </div>
   </div>
 
-  <h1></h1> ABOUT</h1>
-  
- </div>
+  <h1>ABOUT</h1>
 </header> 
+
 <section>
   <article>
-<div class="about"></div>
     <div class="a">
-<h2> This website is for primary and secondary school revision. Please feel free to use it.</h2>
+      <h2>This website is for primary and secondary school revision. Please feel free to use it.</h2>
+      <h2>WebRevise: for KS2, KS3 and GCSE revision</h2> 
+      <h2>It is a compilation of revision websites in one place to find them easily for KS2, KS3 and GCSEs.</h2>
+      <h2>It helps with finding websites for revising.</h2>
+      <br><br>
+      <h2>GOOD LUCK!!!</h2>
+    </div> 
 
-<h2>WebRevise : for KS2, KS3 and GCSE revision</h2> 
+    <div class="author-info">
+      <h3>Author: Avika Shah</h3>
+      <a href="https://linkedin.com/in/avika-shah" target="_blank">LinkedIn: avika-shah</a>
+      <a href="https://www.instagram.com/webrevise/" target="_blank">Instagram</a>
+    </div>
+  </article>
+</section>
 
-<h2>It is a compilation of revision websites in one to find them easily for KS2, KS3 and GCSEs. It helps with finding websites for revising.</h2>
-<br>
-<br>
-<h2> GOOD LUCK!!! </h2> 
-<br><br><br><br><br>
-</div> 
-  <h3>Author: Avika Shah<br><br><br><br><br>
-  <a href="https://linkedin.com/in/avika-shah">LinkedIn: https://linkedin.com/in/avika-shah</a><br><br><br>
-    
-  <a href="https://www.instagram.com/webrevise/">Instagram</a></h3>
-
-</article>
-    <script>
+<script>
   function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("show");
   }
 </script>
 
 </body>
-  
-
 </html>
